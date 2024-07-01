@@ -11,7 +11,7 @@ public class Ex12 {
 		boolean result = ((a += 10) < 0) && ((b += 10) > 0);
 		System.out.println(result);
 		System.out.println(a);
-		System.out.println(b);
+		System.out.println(b);a
 		
 		if ((a += 10) < 0) {
 			System.out.println(a+a);
