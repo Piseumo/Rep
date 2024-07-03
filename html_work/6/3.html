@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"],
+        input[type="email"] {
+            width: 300px;
+            height: 25;
+            font-size: 1.5rem;
+            border-radius: 10px;
+        }
+        fieldset{
+            padding: 50px; border-radius: 10px; background-color: rgba(160, 83, 19, 0.795) ; border: 10px solid #b9b73e ;
+
+        }
+
+        div {
+            flex: 0;
+            /* width: 0.px; */
+            float: left;
+
+        }
+
+
+
+
+
+        #male:checked~div {
+            background-color: blue;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="4.html" method="post" target="_blank">
+        <fieldset>
+            
+            <legend><b>
+                    <h3>네이버 회원가입</h3>
+                </b></legend>
+            <fieldset>  
+                
+                <legend><b>기본 정보</b></legend>
+                <ul>
+                    <li><b>아이디</b><br><br>
+                        <input type="text" name="id" id="id" placeholder="영문">
+                        <label for="id"></label><br><br>
+                    </li>
+                    <li><b>비밀번호</b><br><br>
+                        <input type="text" name="id" id="id" placeholder="영문+숫자 8이상 입력"><br>
+                        <label for="password"></label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>선택 정보</b></legend>
+                <ul>
+                    <li>
+                        <legend><b>성별선택</b></legend>
+                        <br>
+                            <label for="male"><b>남성</b></label>
+                            <input type="checkbox" id="male" name="gender">
+
+                            <label for="female"><b>여성</b></label>
+                            <input type="checkbox" id="female" name="gender">
+
+                            <!-- <label for="성별없음">성별 없음</label> -->
+                            <b>성별없음</b>
+                            <input type="checkbox">
+                    </li>
+                    <br><br><li><b>이메일</b><br><br>
+                        <input type="email" placeholder="xxxxx@xxx.com">
+                        <input type="submit" value="제출하기">
+                    </p>
+                    </li>
+                </ul>
+            </fieldset>
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

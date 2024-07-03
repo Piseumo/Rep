@@ -12,7 +12,7 @@ public class Ex09 {
         System.out.print("숫자를 넣으세요: ");
 		int num = scan.nextInt();
 		
-		if(num>0 || num<0) {
+		if(num>0 && num<0) {
 		System.out.println(num>=1 ? "양수":"음수");
 		}
 		else {

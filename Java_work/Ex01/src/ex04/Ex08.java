@@ -12,7 +12,7 @@ public class Ex08 {
 		int numOfApples = 123;
 		int sizeOfBucket = 10;
 		
-		int numOfBucket = (numOfApples/sizeOfBucket)+(numOfApples%sizeOfBucket>0?1:0);
+		int numOfBucket = (numOfApples/sizeOfBucket)+(numOfApples%sizeOfBucket > 0 ? 1 : 0);
 		
 //		if(1 <= numOfApples%sizeOfBucket && numOfApples%sizeOfBucket <10) {
 //			System.out.println(1);
