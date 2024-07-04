@@ -1,0 +1,33 @@
+//주문 목록 
+	public List<OrderListDto> orderList(long storeId, String list, int page) {
+		Page p = new Page(page,10);
+		
+		Map<String, Object> map = new HashMap<>();
+		
+		map.put("storeId", storeId);
+		map.put("list", list);
+		map.put("firstList", p.getFirstList());
+		map.put("lastList", p.getLastList());
+		return adminMapper.orderList(map);
+	}
+	
+	//주문 수락
+	public void orderAccept(String orderNum, long userId) {
+		Map<String, Object> map = new HashMap<>();
+		map.put("orderNum", orderNum);
+		map.put("userId", userId);
+		adminMapper.orderAccept(map);
+	}
+
+	// 주문 취소
+	public void orderCancel(OrderCancelDto orderCancelDto) {
+		adminMapper.orderCancle(orderCancelDto);
+	}
+	
+	//주문 완료
+	public void orderComplete(String orderNum, long userId) {
+		Map<String, Object> map = new HashMap<>();
+		map.put("orderNum", orderNum);
+		map.put("userId", userId);
+		adminMapper.orderComplete(map);
+	}

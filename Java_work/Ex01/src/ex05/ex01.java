@@ -17,9 +17,9 @@ public class ex01 {
 //			break;
 //		}
 //		System.out.println("끝");
-		int n = 2;
+		int n = 1;
 
-		if (n == 1) {
+		if (n == 0) {
 		} else if (n == 2) {
 			System.out.println("n은 2입니다");
 		} else if (n == 3) {
