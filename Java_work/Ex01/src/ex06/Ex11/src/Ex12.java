@@ -1,2 +1,18 @@
-package PACKAGE_NAME;public class Ex12 {
+public class Ex12 {
+    public static void main(String[] args){
+        int sum = 0;
+    for(int i= 1 ;  ; i++){
+        System.out.println("i = " +i);
+        if(i%2==0) {
+            sum = sum - i;
+        }else{
+            sum = sum + i;
+
+        }
+        //if(sum>100)
+         //   break;
+        }
+
+    }
 }
+

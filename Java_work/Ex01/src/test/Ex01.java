@@ -9,20 +9,6 @@ public class Ex01 {
 //	4. for 문을 while 문으로 변경하시오
 //	다 한 사람을 함수호출로 변경해 보세요
 
-		int sum = 0;
-
-		// sum 에다가 i값들을 더해서 sum 에다가 넣어라
-
-		for (int i = 1; i <= 20; i++) {
-//			System.out.println(sum);
-		if (i % 2 != 0 && i % 3 != 0) {
-			sum += i;
-			sum = sum + i;
-			System.out.println(i);
-			}
-		}
 		
-		System.out.println(sum);
-
 	}
 }

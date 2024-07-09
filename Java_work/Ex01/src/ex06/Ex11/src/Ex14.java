@@ -1,2 +1,19 @@
-package PACKAGE_NAME;public class Ex14 {
+public class Ex14 {
+    public static int add() {
+        System.out.println("기본 add");
+        return 10;
+    }public static int add(int num){
+        System.out.println("num add");
+        return 11;
+    }
+    public static void main(String[] args) {
+     //   int result = add();
+        //  System.out.println("result =" + result);
+        System.out.println("result="+add());
+        System.out.println("result="+add(924));
+    }
+
+
+
+
 }

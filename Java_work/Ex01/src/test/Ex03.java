@@ -6,18 +6,27 @@ public class Ex03 {
 
 	public static void main(String[] args) {
 		
-//		a = 홀수
-//       b = -짝수
+		int num1 = 0;
+		int num2 = 0;
+		int num3 = 0;
+		
+		for(int i= 1; i <100 ; i++) {  
+			num1 = i+ 2;
+			System.out.println("num1 =  "+ num1);
+			
+		}
+			
 		
 		
-        for(int i = 1; i < 100 ; i = i +( (-1*i) -1)); {
-        	if(i%2 != 0) 
-        		System.out.println("i는 " + i);
 
-        	
+			
+			
+			
+			
+	
         	}
         	                    
         	                       
         }
 	
-}		  
+		  
