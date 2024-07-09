@@ -17,7 +17,7 @@ public class Q2 {
         else if (a>60 && a<3600)
             System.out.println((a / 60) + "분" + (a % 60) + "초");
         else
-            System.out.println((a / 3600) + "시" + (a % 60) + "분" + (a % 60) + "초");
+            System.out.println((a / 3600) + "시" + 3600%(a / 60) + "분" + (a % 60) + "초");
 
     }
 
