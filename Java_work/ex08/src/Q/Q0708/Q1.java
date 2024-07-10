@@ -1,4 +1,4 @@
-package Q;
+package Q.Q0708;
 import Q.W.ww;
 
 //1. 2의 n승을 구하는 함수를 재귀적으로 구현해 보자.
