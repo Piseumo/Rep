@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.moving-image {
+    width: 100%;
+    animation: moveImage 10s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(50%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}

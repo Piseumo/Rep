@@ -24,9 +24,12 @@ public class Q1 {
         int j = 1;
         int sum = 0;
         for (int k = 2; k <= 10; k++) {
-            sum = i + j;
+            sum = i + j; // 2
             i   = j;
+            // 1
             j   = sum;
+            // 1
+            System.out.println(i);
         }
 
     }

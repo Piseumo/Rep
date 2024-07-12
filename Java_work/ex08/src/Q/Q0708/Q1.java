@@ -15,10 +15,10 @@ public class Q1 {
         int n = scan.nextInt();
 
         ww fact = new ww();
-        int retValue = fact.aa(n);
+        //int retValue = fact.aa(n);
 
         System.out.println("result = " + n);
-        System.out.println("retValue = " + retValue);
+       // System.out.println("retValue = " + retValue);
 
     }
 
