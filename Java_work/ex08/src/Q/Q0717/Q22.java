@@ -11,29 +11,29 @@ package Q.Q0717;
 //    - main() 메소드에서는 1978년, 스웨덴 국적의 ABBA가 부른 "Dancing Queen"을
 //      song 객체로 생성하고 show()를 이용하여 노래의 정보를 다음과 같이 출력하라.
 //        1978년 스웨덴국적의 ABBA가 부른 Dancing Queen
-class Song{
-    String title;
-    String artist;
-    int year;
-    String country;
+class Sing{
+    static String title = "dancingQ";
+    static String artist ="dd";
+    static int year = 123;
+    static String country ="asd";
 
-    public Song(){
+/*    public Sing(){
     }
-    public Song(String t,String a,int y,String c){
-        this.title = t;
+    public Sing(String t, String a, int y, String c){
+        this.title= t;
         this.artist = a;
         this.year = y;
         this.country = c;
-    }
-
-    public void show(){
+    }*/
+    public static void show(){
         System.out.println(year+country+artist+title);
     }
 }
-public class Q2 {
-    public static void main(String[] args) {
-    Song output = new Song("Dancing Queen","ABBA",1978,"스웨덴");
-    output.show();
 
+
+public class Q22 {
+    public static void main(String[] args) {
+//    Sing result = new Sing("Dancing Queen","ABBA",1978,"스웨덴");
+        Sing.show();
     }
 }

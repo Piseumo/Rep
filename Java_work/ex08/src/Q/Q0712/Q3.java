@@ -8,8 +8,8 @@ public class Q3 {
         Scanner scan = new Scanner(System.in);
         System.out.println("정수를 입력하세요");
         int a = scan.nextInt();
-        for (int i = 0 ; i<10 ; i++){
-            int result = a/2;
+        for (int i = 1 ; i<10 ; i++){
+            int result = a/2*2*i;
             //나누기 해서 곱하기 2를 했을때 원래수가 되면 0
             //아니면 1
             if(result*2 == a) {
@@ -17,6 +17,7 @@ public class Q3 {
             }
                 else if (result*2 != a)
                     System.out.println("1");
+            System.out.println(a);
 
 
                 }
