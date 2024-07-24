@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3dbc61ce-a696-4704-9186-f381efc8d6e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/KiaCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/MobilePhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SamsungCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SmartPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/BB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/box/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/box/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/box/PaperBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount00.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/ComFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/DupRef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Friend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/UniFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/CMYKPrintable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/Printable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/CMYKPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/LgPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/SamPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Q0722.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Rectangle1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_work.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html_work/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html_work/.idea/html_work.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html_work/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html_work/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../html_work/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/Ex13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex01/src/ex03/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/src/Main/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0711/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Q/Q0711/Q1.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2jdL5wTqmZUSzcdRZXpEsC15gTT" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Q1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/work/Java_work&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q.Q0711.Q1" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q.Q0711.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Q1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dbc61ce-a696-4704-9186-f381efc8d6e5" name="Changes" comment="" />
+      <created>1721711827294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721711827294</updated>
+    </task>
+    <servers />
+  </component>
+</project>

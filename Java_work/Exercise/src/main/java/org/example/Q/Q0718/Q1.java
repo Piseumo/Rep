@@ -1,6 +1,5 @@
 package org.example.Q.Q0718;
 
-import org.example.Exercise.Ex0718.Student1;
 
 //1. int형 1차원 배열을 매개변수로 전달 받아서 배열에 저장된 최댓값,최솟값을 찾아서 반환하는 메소드를
 //각각 다음의 형태로 정의하자
@@ -13,8 +12,8 @@ import org.example.Exercise.Ex0718.Student1;
 public class Q1 {
     public static void main(String[] args) {
         int[] result = {0,100,-1,2,-50};
-        maxValue(result);
-        minValue(result);
+        System.out.println("최댓값 : " +maxValue(result));
+        System.out.println("최솟값 : "+minValue(result));
     }
     public static int maxValue(int[] arr) {
         int maxnum = arr[0];
@@ -23,7 +22,6 @@ public class Q1 {
                     maxnum = i;
                 }
         }
-        System.out.println(maxnum);
         return maxnum;
         }
     public static int minValue(int[] arr) {
@@ -33,7 +31,6 @@ public class Q1 {
                 minnum = arr[i];
             }
         }
-        System.out.println(minnum);
         return minnum;
     }
 

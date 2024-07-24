@@ -1,0 +1,9 @@
+#내컴퓨터
+#127.0.0.1
+#localhost
+#or ip주소
+
+#dokerhub desktop
+
+#docker run -d -p 80:80 --name mynginx nginx
+#docker cp . mynginx:usr/share/nginx/html
