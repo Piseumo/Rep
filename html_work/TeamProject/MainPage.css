@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.logo{
+     margin: auto;
+}
+.logo-placeholder{
+    text-align: center; 
+    width: 150px;
+    height: 75px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    
+}
+.container{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+}
+.container li{
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    margin: 15px;
+
+}
+.category-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+
+}
+.category{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.category li{
+    border: 2px solid #000000;
+    padding: 15px;
+    margin: 30px;
+    display: flex;
+}
+
+.prevnext {
+    text-align: center; /* 중앙 정렬 */
+    margin-top: 0 auto;
+}
+
+#slider-prev, #slider-next {
+    margin: 0 10px; /* 버튼 사이 간격 */
+    padding: 15px 30px; /* 버튼 내부 여백 */
+    background-color: #000000; /* 버튼 배경색 */
+    color: #fff; /* 버튼 글자색 */
+    border: none; /* 버튼 테두리 제거 */
+    cursor: pointer; /* 포인터 커서 */
+}
+#slider-prev:hover, #slider-next:hover {
+    background-color: #eb7506; /* 호버 시 버튼 배경색 */
+}
+.slider img{
+    width: 100%;
+    height: auto;
+}

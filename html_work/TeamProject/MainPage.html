@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/MainPage.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
+    <script>
+             $(document).ready(function () {
+            $(".slider").bxSlider({
+                nextSelector: '#slider-next',
+                prevSelector: '#slider-prev',
+                nextText: '',
+                prevText: ''
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+    <div class="logo-placeholder">
+    <h2 class="logo"><a href="http://127.0.0.1:5500/MainPage.html">로고<br> 이미지</a></h2>
+    </div>
+
+ <ul class="container">
+    <li><a href="#">검색<br>아이콘</a></li> 
+    <li><a href="#">장바구니<br>아이콘</a></li>
+    <li><a href="#">사람<br>아이콘</a></li>
+ </ul>
+ 
+ <div> 
+</div>
+
+    <div class="category-box">
+    <ul class="category">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">제품소개</a></li>
+        <li><a href="#">매장안내</a></li>
+        <li><a href="#">게 시 판</a></li>
+        <li><a href="#">고객센터</a></li>
+        </ul>
+    </div>
+
+    <div class="prevnext">
+        <button id="slider-prev"></button>
+        <button id="slider-next"></button>
+    </div>
+
+    <div>
+    <div class="slider">
+        <div><img src="https://c.wallhere.com/photos/38/32/cookies_donuts_batch_allsorts_variety-728920.jpg!d" alt=""></div>
+    <div><img src="https://png.pngtree.com/background/20230519/original/pngtree-free-free-desserts-wallpapers-picture-image_2669805.jpg" alt=""></div>
+    <div><img src="https://img.freepik.com/free-photo/view-of-delicious-and-sweet-cupcake-desserts-with-frosting_23-2150679646.jpg" alt=""></div>
+    <div><img src="https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Bread-wheat_1920x1080.jpg" alt=""></div>
+    </div> 
+</div>
+
+
+</body>
+</html>
