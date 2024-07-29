@@ -5,82 +5,284 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dbc61ce-a696-4704-9186-f381efc8d6e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/Ex21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ex0724/src/main/java/org/example/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/KiaCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/MobilePhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SamsungCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SmartPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/AA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/BB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount00.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/ComFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/DupRef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Friend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/UniFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/CMYKPrintable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/Printable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/CMYKPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/LgPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/SamPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Q0722.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Rectangle1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_work.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html_work/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html_work/.idea/html_work.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html_work/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html_work/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html_work/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex01/src/Ex13.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex01/src/ex03/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex12.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/BizMan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Box.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Ex03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Man.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Q11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/Student1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0718/example.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextGame/src/Main/Start.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0711/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Q/Q0711/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0725/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0725/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex0725/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0725/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0723/Q1_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex0725/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/Ex01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/aa/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/Ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex01/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex01/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex01/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex01/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex01/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex01/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex02/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex02/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex02/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex02/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex02/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex02/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex10.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex11.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex12.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex03/Ex13.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex03/Ex13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex10.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex04/Ex11.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex04/Ex11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex05/ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex05/ex09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/Ex11.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/Ex11.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex12.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex13.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex14.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex15.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex16.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Ex17.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Ex17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Q.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Q.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/Ex11/src/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/src/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/ex06/ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/test/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/test/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/test/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/test/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/test/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/test/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/test/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/test/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex01/src/test/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/test/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex03/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex03/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex03/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex03/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/KiaCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/KiaCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/MobilePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/MobilePhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SamsungCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/SamsungCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/SmartPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/SmartPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/AA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/aa/AA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/BB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/aa/BB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/CC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/aa/CC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0719/aa/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0719/aa/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/BankAccount00.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/BankAccount00.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/ComFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/ComFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/DupRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/DupRef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/Friend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0722/UniFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0722/UniFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/CMYKPrintable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Inter/CMYKPrintable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Inter/Printable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Inter/Printable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/CMYKPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Print/CMYKPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/LgPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Print/LgPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Exercise/Ex0723/Printer/Print/SamPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Example/Ex0723/Printer/Print/SamPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0718/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0718/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0718/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0718/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0718/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Q0722.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0722/Q0722.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0722/Rectangle1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0722/Rectangle1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0723/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q1_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0723/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise/src/main/java/org/example/Q/Q0723/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exercise/src/Q/Q0723/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomtoGit/src/CodeReview0724/ArrayMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomtoGit/src/CodeReview0724/ArrayMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Q/Q0711/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/ex06/Ex11/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ex0725/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextGame/TextGame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/Ex01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01/src/ex06/Ex11/Ex11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/TextGame/TextGame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ex08/ex08.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/Ex01.class" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/day01/Ex01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/day01/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/ex08.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Bank/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Bank/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Bank/BankAccountMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Bank/BankAccountMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0709/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0709/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0709/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0709/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0709/star.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0709/star.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0710/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0710/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0710/BankAccountMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0710/BankAccountMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0710/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0710/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0710/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0710/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0711/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0711/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0711/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0711/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0711/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0711/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0711/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0711/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0711/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0711/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex07.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex08.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex09.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex09.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0712/Ex10.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0712/Ex10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Exam1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Exam1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Exam2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Exam2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Exam3.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Exam3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0715/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0715/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Ex04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0717/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0717/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Ex0718/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Ex0718/Man.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q07015/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q07015/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0708/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0708/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0708/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0708/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0708/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0708/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0708/Q4.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0708/Q4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0708/Q5.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0708/Q5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0709/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0709/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0710/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0710/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0710/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0710/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0710/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0710/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0711/Q1_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0711/Q1_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0712/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0712/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0712/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0712/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0712/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0712/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0712/Q4.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0712/Q4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0716/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0716/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0716/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0716/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0716/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0716/TV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0717/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0717/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0717/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0717/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/Q0717/Q22.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/Q0717/Q22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/W/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/W/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/Q/W/ww.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/Q/W/ww.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/aa/bb/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/bb/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/aa/bb/BankAccountMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/bb/BankAccountMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/aa/bb/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/bb/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/aa/bb/Box1.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/bb/Box1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/aa/bb/ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/aa/bb/ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex08/src/car/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoEclipse/src/car/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -89,6 +291,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2jdL5wTqmZUSzcdRZXpEsC15gTT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -100,16 +305,31 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/work/Java_work/Exercise"
+    "last_opened_file_path": "D:/work/Java_work",
+    "애플리케이션.ArrayMethod.executor": "Run",
+    "애플리케이션.Ex01 (1).executor": "Run",
+    "애플리케이션.Ex01 (2).executor": "Run",
+    "애플리케이션.Ex01.executor": "Run",
+    "애플리케이션.Ex02.executor": "Run",
+    "애플리케이션.Ex03.executor": "Run",
+    "애플리케이션.Q1_1.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Q3">
-    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q.Q0711.Q1" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\Java_work\doEclipse" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Exercise.src.Example.Ex0725" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.ArrayMethod">
+    <configuration name="ArrayMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomtoGit.src.CodeReview0724.ArrayMethod" />
       <module name="Java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q.Q0711.*" />
+          <option name="PATTERN" value="HomtoGit.src.CodeReview0724.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +337,103 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Q.Q0723.Q3" />
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Ex01" />
       <module name="Java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Q.Q0723.*" />
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Ex01" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Ex01" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Ex02" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Ex03" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Main" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Main" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.src.Example.Ex0725.Main" />
+      <module name="Java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.src.Example.Ex0725.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,8 +443,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q3" />
-        <item itemvalue="Application.Q1" />
+        <item itemvalue="애플리케이션.ArrayMethod" />
+        <item itemvalue="애플리케이션.Ex03" />
+        <item itemvalue="애플리케이션.Ex02" />
+        <item itemvalue="애플리케이션.Ex01" />
+        <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
   </component>
