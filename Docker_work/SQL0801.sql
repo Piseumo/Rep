@@ -156,8 +156,10 @@ JOIN DEPT D ON E.DEPTNO = D.DEPTNO
 WHERE E.DEPTNO=30
 GROUP BY E.DEPTNO;
 
-SELECT *
-FROM EMP E
-JOIN DEPT D ON E.DEPTNO = D.DEPTNO
-WHERE E.DEPTNO=30
+-- 고객별 평균구매 금액
+SELECT AVG(O.saleprice),C.name
+FROM Orders O
+JOIN Customer C on O.custid = C.custid
+JOIN Book B on B.bookid = O.bookid
+group by C.custid
 

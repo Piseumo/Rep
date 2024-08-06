@@ -127,19 +127,15 @@ GROUP BY name;
 
 -- 2) 두 개 이상의 서로 다른 출판사에서 도서를 구매한 고객의 이름
 
-SELECT C.name
-FROM Customer C
-WHERE 
-
-SELECT count(B.publisher),C.name
+SELECT count(DISTINcT B.publisher),C.name
 FROM Customer C,Book B,Orders O
 WHERE C.custid = O.custid && B.bookid = O.bookid
-Group by B.publisher,C.name
-HAVING count(B.publisher) >= 2;
+Group by C.name
+HAVING count(distinct B.publisher) >= 2;
+
 -- 3) 전체 고객의 30%이상이 구매한 도서
 -- >> 전체 고객이 구매한 도서
 -- 30% =  구매한도서수/전체 고객의수 
-
 
 SELECT B.bookname , count(B.bookname)/(
 SELECT count(C.custid)
@@ -147,3 +143,9 @@ FROM Customer C)
 FROM Orders O ,Customer C,Book B
 WHERE C.custid = O.custid && B.bookid = O.bookid
 Group by bookname
+HAVING count(B.bookname) >= 0.3;
+
+
+select O.bookid,C.name
+FROM Orders O ,Customer C,Book B
+WHERE C.custid = O.custid && B.bookid = O.bookid && (B.bookid = 8 or B.bookid = 10);

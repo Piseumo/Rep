@@ -31,18 +31,3 @@ Orders od
 WHERE cs.custid=od.custid
 group by cs.name;
 
--- 학생테이블  
--- P.K: 연도+학년+학반+학번
--- 학생이름 : VARCHAR
--- 연도 : INT,CHAR,VARCHAR,DATE
--- 학년 : INT,CHAR,VARCHAR
--- 학번 : INT,CHAR,VARCHAR
--- 패스워드 : VARCHAR
-
--- 선생님테이블  
--- ID : P.K
--- 패스워드 : VARCHAR
--- 이름 : VARCHAR
--- 과목 : VARCHAR
--- 교사상태 : CHAR(1)
-
