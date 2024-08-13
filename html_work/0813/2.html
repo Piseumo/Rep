@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #mydiv{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    #aa:checked~#mydiv{
+      display: none;
+    }
+    #prodiv{
+      position: absolute;
+      top: 30px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div>
+  <label for="aa">aa</label>
+  <input type="checkbox" name="aa" id="aa"> 
+  <div id="mydiv"></div>
+  <div id="prodiv">
+    <h1>상품</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla magnam totam aut beatae omnis sequi doloremque, cum quae placeat consequatur. Voluptate dicta aspernatur, earum dignissimos autem sed accusantium distinctio in!</p>
+  </div>
+</div>
+</body>
+</html>

@@ -70,7 +70,7 @@ FROM Orders O,Book B
 WHERE O.bookid = B.bookid;
 
 SELECT B.bookname, DATE_FORMAT(O.orderdate, '%y%m%d') AS 데이터번호
-FROM Orders O
+FROM Orders O 
 JOIN Book B ON O.bookid = B.bookid
 WHERE orderdate = '2024-07-04';
 

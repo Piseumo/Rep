@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      transition: 2s;
+    }
+    div:nth-child(1){
+      transform: rotate(0deg) translate(100px,100px);
+      background-color: red;
+    }
+    div:nth-child(1):hover{
+      transform: rotate(45deg) translate(100px,100px);
+    }
+    div:nth-child(2){
+      transform: rotate(45deg);
+      background-color: blue;
+    }
+    div:nth-child(2):hover{
+      transform: translate(1500px);
+      background-color: aquamarine;
+    }
+    div:nth-child(3){
+      transform: scale(2) translate(50px);
+      background-color: yellow;
+      opacity: 0.5;
+    }
+    div:nth-child(3):hover{
+      transform: scale(2) translate(250px);
+      background-color: rgb(51, 51, 25);
+      opacity: 0.5;
+    }
+    div:nth-child(4){
+      transform:perspective(30px);
+      
+      background-color: green;
+    }
+    
+    div:nth-child(5){background-color: gray;}
+    div:nth-child(6){background-color: aqua;}
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package Ex0717;
+package Exercise.Ex0717;
 
 public class Person {
 

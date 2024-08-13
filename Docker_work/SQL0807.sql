@@ -7,6 +7,7 @@
 7. 급여(salary)의 최대값과 최소값의 차이를 구하세요.
 8. Toronto(city)에서 일하는 직원의 last_name, job, department_id, department_name을 출력하세요.
 */
+
 -- 1. 성(last name)이 Matos와 Taylor인 직원의 성, 직무 ID(job_id), 시작 날짜(start date)를 출력하는 보고서를 작성하세요. 쿼리를 시작 날짜 기준 오름차순으로 정렬하세요.
 select E.last_name, E.job_id, J.start_date
 from  job_history J
@@ -24,13 +25,26 @@ from employees E , jobs J
 where E.job_id = J.job_id && job_title like 'Sales representative' or 'Stock Clerk' or E.salary not in(2500,3500,7000)
 
 4. 매니저 수를 나열하지 않고 구하세요. 열 이름을 '매니저 수(Number of Managers)'로 표시하세요.
+select count(manager_id) as NumberofManagers
+from employees;
 5. 매니저의 번호(manager number)와 해당 매니저 밑에서 가장 낮은 급여를 받는 직원의 급여를 출력하는 보고서를 작성하세요. 매니저가 알려지지 않은 경우와 최소 급여가 $6,000 이하인 그룹은 제외하세요. 출력 값을 급여 내림차순으로 정렬하세요.
+select manager_id , min(salary)
+from employees
+where manager_id is not null
+group by manager_id
+having min(salary) >= 6000
+order by min(salary) desc;
 6. 직원의 성(last name)과 직원 번호(employee number), 그리고 그들의 매니저의 성(last name)과 매니저 번호(manager number)를 함께 출력하는 보고서를 작성하세요. 열 이름은 각각 'Employee', 'Emp#', 'Manager', 'Mgr#'로 표시하세요.
+select E1.last_name as 'Employee', E1.employee_id as 'Emp#', E2.last_name as 'Manager' , E1.manager_id as 'Mgr#'
+from employees E1
+left join employees E2 on E1.manager_id = E2.employee_id;
 7. 같은 부서에서 일하는 모든 직원의 성(last name), 부서 번호(department number)를 출력하는 보고서를 인사부서에 작성하세요.
+select last_name, department_id
+from employees
+
 8. 임원 부서(Executive department)에 있는 모든 직원의 부서 번호(department number), 성(last name), 직무 ID(job_id)를 출력하는 보고서를 작성하세요.
 9. King에게 보고하는 모든 직원의 성(last name)과 급여(salary)를 출력하는 보고서를 작성하세요.
 10. 'ST_CLERK' 직무 ID를 포함하지 않는 부서의 부서 ID 목록이 인사부서에 필요합니다.
-
 
 -- 1. Employees와 Departments 테이블에 저장된 행의 개수를 출력하세요.
 select count(*)

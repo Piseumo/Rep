@@ -1,4 +1,4 @@
-package Ex0717;
+package Exercise.Ex0717;
 //오버로딩은 매서드 생성자 이름이 같지만 파라미터가 다를떄 사용가능하다
 public class Ex01 {
     public static void main(String[] args) {
