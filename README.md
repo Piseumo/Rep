@@ -1,12 +1,1 @@
-"# Piseumo-REP" 
-"# Piseumo-REP" 
-"# Piseumo-REP" 
-"# Piseumo-REP" 
-"# Piseumo-REP" 
-"# Piseumo-REP" 
-#git config --global user.email "tackteho@naver.com"
-#git config --global user.name "Piseumo""# Piseumo-REP" 
-안녕하십니까
-# Rep
-# Rep
-# REP1
+docker run -d --name mysql-container -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 mysql
