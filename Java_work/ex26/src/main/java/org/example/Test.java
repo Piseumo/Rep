@@ -1,2 +1,14 @@
-package org.example;public class Test {
+package org.example;
+
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int result = 0;
+        for(int i = 1; i <= n; i ++){
+            result += i;
+        }
+            System.out.println(result);
+    }
 }

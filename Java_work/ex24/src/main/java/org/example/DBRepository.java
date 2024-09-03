@@ -132,5 +132,8 @@ public class DBRepository {
             }
         }
     }
+    public void delete() {
+
+    }
 
 }

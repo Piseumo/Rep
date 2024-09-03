@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div style="padding-left: 50%;">
+  <div>
+    <input type="text" id="num" value="1" style="border: 5px double black; padding: 10px;"><br>
+    <div>
+    <button id="btn" style="font-size: x-large;">구구단 계산하기</button>
+    </div>
+  </div>
+  <!-- 구구단 결과를 출력할 영역 추가 -->
+  <div id="print" style="font-size: x-large; text-align: center;"></div>
+</div>
+  <script>
+    var num = document.getElementById('num')
+    var btn = document.getElementById('btn')
+    var print = document.getElementById('print')
+    btn.onclick = () => {
+      var n = num.value; // 'num.value'는 input 필드의 값을 가져오고
+      // 구구단 결과를 출력할 변수
+      var result = "";
+
+      for (var i = 1; i <= 9; i++) {
+        result += n + " x " + i + " = " + (n * i) + "<br>";
+      }
+      print.innerHTML = result;
+    };
+  </script>
+</body>
+</html>
