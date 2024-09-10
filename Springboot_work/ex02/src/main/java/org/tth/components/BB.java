@@ -1,2 +1,9 @@
-package org.tth.components;public class BB {
+package org.tth.components;
+
+import lombok.*;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BB {
+
 }

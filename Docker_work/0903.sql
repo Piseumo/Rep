@@ -1,0 +1,5 @@
+
+USE mariaDB;
+SHOW TABLES;
+SELECT * FROM users;
+

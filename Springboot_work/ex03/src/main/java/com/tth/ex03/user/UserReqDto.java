@@ -1,2 +1,4 @@
-package com.tth.ex03.user;public class UserReqDto {
+package com.tth.ex03.user;
+
+public class UserReqDto {
 }

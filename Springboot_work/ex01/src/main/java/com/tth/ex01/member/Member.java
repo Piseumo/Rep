@@ -1,4 +1,4 @@
-package com.tth.member;
+package com.tth.ex01.member;
 
 
 import lombok.*;

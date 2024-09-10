@@ -1,2 +1,20 @@
-package org.tth.conf;public class Ex01 {
+package org.tth.conf;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Arrays;
+
+public class Ex01 {
+    public static void main(String[] args) {
+
+        ApplicationContext applicationContext
+                = new AnnotationConfigApplicationContext(MyConf2.class);
+        Arrays.stream(applicationContext.getBeanDefinitionNames())
+                .forEach(System.out::println);
+
+
+
+
+    }
 }

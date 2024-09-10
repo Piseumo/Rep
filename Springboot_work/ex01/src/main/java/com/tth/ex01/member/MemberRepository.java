@@ -1,4 +1,6 @@
-package com.tth.member;
+package com.tth.ex01.member;
+
+import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +9,7 @@ import java.sql.ResultSet;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class MemberRepository {
 
     public void select(){
