@@ -22,11 +22,14 @@
   <script setup>
   import axios from 'axios';
   import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+  import { useRoute, useRouter } from 'vue-router';
   
   const title = ref('');
   const content = ref('');
   const router = useRouter();
+  const route = useRoute();
+  console.log(route.query.idx);
+
   const save = () => {
     const data = {
       title: title.value,

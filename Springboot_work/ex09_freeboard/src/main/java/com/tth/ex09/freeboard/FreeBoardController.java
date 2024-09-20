@@ -1,7 +1,10 @@
-package com.tth.ex08.freeboard;
+package com.tth.ex09.freeboard;
 
+import com.tth.ex09.error.BizException;
+import com.tth.ex09.error.ErrorCode;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -18,13 +21,15 @@ import java.util.List;
 @RequestMapping("freeboard")
 @RequiredArgsConstructor
 @CrossOrigin
+@Slf4j
 public class FreeBoardController {
 
     private final FreeBoardRepository freeBoardRepository;
+    private final ModelMapper modelMapper;
 
     @GetMapping
     public ResponseEntity<FreeBoardResponsePageDto> findALl(@RequestParam(name = "pageNum",defaultValue = "0") int pageNum
-            , @RequestParam(name = "size",defaultValue = "5")int size){
+            ,@RequestParam(name = "size",defaultValue = "5")int size){
 
         Sort sort = Sort.by(Sort.Direction.DESC,"idx");
 
@@ -54,11 +59,35 @@ public class FreeBoardController {
         return ResponseEntity.ok(freeBoardResponsePageDto);
     }
 
+    @GetMapping("view/{idx}")
+    public ResponseEntity<FreeBoardReponseDto> findOne(@PathVariable(name = "idx") long idx){
+
+        FreeBoard freeBoard = freeBoardRepository.findById(idx).orElseThrow(()->new BizException(ErrorCode.NOT_FOUND));
+
+        FreeBoardReponseDto freeBoardReponseDto = modelMapper.map(freeBoard,FreeBoardReponseDto.class);
+
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy/MM/dd hh:mm");
+
+        freeBoardReponseDto.setRegDate(dateTimeFormatter.format(freeBoard.getRegDate()));
+        freeBoardReponseDto.setModDate(dateTimeFormatter.format(freeBoard.getModDate()));
+
+        return ResponseEntity.ok(freeBoardReponseDto);
+    }
+
     @PostMapping
     public ResponseEntity<FreeBoard> save(@Valid @RequestBody FreeBoardReqDto freeBoardReqDto){
         FreeBoard freeBoard = new ModelMapper().map(freeBoardReqDto,FreeBoard.class);
         freeBoardRepository.save(freeBoard);
         return ResponseEntity.status(200).body(freeBoard);
     }
+
+    @DeleteMapping("delete/{idx}")
+    public ResponseEntity<String> deleteById(@PathVariable(name="idx")long idx){
+        freeBoardRepository.findById(idx).orElseThrow(()->new BizException(ErrorCode.NOT_FOUND));
+        freeBoardRepository.deleteById(idx);
+        return ResponseEntity.ok("삭제되었습니다.");
+    }
+
+
 
 }
