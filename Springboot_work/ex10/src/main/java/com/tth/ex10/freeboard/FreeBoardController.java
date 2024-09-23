@@ -1,12 +1,11 @@
-package com.tth.ex09.freeboard;
+package com.tth.ex10.freeboard;
 
-import com.tth.ex09.error.BizException;
-import com.tth.ex09.error.ErrorCode;
+import com.tth.ex10.error.BizException;
+import com.tth.ex10.error.ErrorCode;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -27,14 +26,6 @@ public class FreeBoardController {
 
     private final FreeBoardRepository freeBoardRepository;
     private final ModelMapper modelMapper;
-
-    @Value("${my.value}")
-    private String welcome;
-
-    @GetMapping("test")
-    public String test(){
-        return welcome;
-    }
 
     @GetMapping
     public ResponseEntity<FreeBoardResponsePageDto> findALl(@RequestParam(name = "pageNum",defaultValue = "0") int pageNum
