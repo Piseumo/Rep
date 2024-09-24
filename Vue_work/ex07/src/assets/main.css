@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .h1-red{
-    
+  font-size: 5rem;
+  color : red;
 }
