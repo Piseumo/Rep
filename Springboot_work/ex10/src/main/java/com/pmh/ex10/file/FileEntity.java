@@ -1,7 +1,7 @@
-package com.tth.ex10.file;
+package com.pmh.ex10.file;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.tth.ex10.freeboard.FreeBoard;
+import com.pmh.ex10.freeboard.FreeBoard;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,9 +11,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "freeBoardFiles")
+@Table(name = "freeBoardFile")
 public class FileEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idx;
@@ -23,6 +22,7 @@ public class FileEntity {
     private String fileDesc;
 
     @ManyToOne
+//    @JoinColumn(name = "free_board_idx")
     @JsonIgnore
     private FreeBoard freeBoard;
 

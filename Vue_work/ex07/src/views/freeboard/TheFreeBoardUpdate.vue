@@ -37,7 +37,7 @@ const router = useRouter();
 const route = useRoute();
 
 const getfreeboard = ()=>{
-  axios.get(`http://localhost:8080/freeboard/view/${route.query.idx}`)
+  axios.get(`http://localhost:10000/freeboard/view/${route.query.idx}`)
     .then(res => {
       title.value = res.data.title;
       content.value = res.data.content;
@@ -59,7 +59,7 @@ const save = () => {
     content: content.value
   };
   axios
-    .post('http://localhost:8080/freeboard', data)
+    .post('http://localhost:10000/freeboard', data)
     .then((res) => {
       console.log(res);
       alert('저장하였습니다.');

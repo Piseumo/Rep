@@ -1,4 +1,6 @@
 package com.tth.ex10.file;
 
-public interface FileRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FileRepository extends JpaRepository<FileEntity, Long> {
 }

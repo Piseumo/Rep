@@ -1,7 +1,7 @@
-package com.tth.ex10.freeboard;
+package com.pmh.ex10.freeboard;
 
-import com.tth.ex10.file.FileEntity;
-import com.tth.ex10.user.User;
+import com.pmh.ex10.file.FileEntity;
+import com.pmh.ex10.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedBy;
@@ -30,13 +30,6 @@ public class FreeBoard {
     private Long idx;
 
     private String title;
-
-//    private FreeBoard(Long idx,String title){
-//        this.idx = idx;
-//        this.title = title;
-//    }
-
-
     private String content;
 
     @ManyToOne(cascade = CascadeType.ALL)
@@ -49,6 +42,7 @@ public class FreeBoard {
     private String modAuthor;
 
     @CreatedDate
+    @Column(updatable = false)
     private LocalDateTime regDate;
 
     @LastModifiedDate
@@ -59,4 +53,5 @@ public class FreeBoard {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "freeBoard")
     private List<FileEntity> list = new ArrayList<>();
+
 }
