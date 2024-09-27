@@ -1,5 +1,6 @@
 package com.tth.ex10.freeboard;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tth.ex10.file.FileEntity;
 import com.tth.ex10.user.User;
 import jakarta.persistence.*;
@@ -36,11 +37,7 @@ public class FreeBoard {
 //        this.title = title;
 //    }
 
-
     private String content;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    private User user;
 
     @CreatedBy
     private String creAuthor;
@@ -49,6 +46,7 @@ public class FreeBoard {
     private String modAuthor;
 
     @CreatedDate
+    @Column(updatable = false)
     private LocalDateTime regDate;
 
     @LastModifiedDate
@@ -59,4 +57,8 @@ public class FreeBoard {
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "freeBoard")
     private List<FileEntity> list = new ArrayList<>();
+
+    @ManyToOne
+    @JsonIgnore
+    private User user;
 }

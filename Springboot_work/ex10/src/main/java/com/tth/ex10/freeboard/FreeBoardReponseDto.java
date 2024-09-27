@@ -1,7 +1,11 @@
 package com.tth.ex10.freeboard;
 
+import com.tth.ex10.file.FileReqDto;
 import com.tth.ex10.user.User;
 import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class FreeBoardReponseDto {
@@ -18,4 +22,6 @@ public class FreeBoardReponseDto {
     private String modDate;
 
     private int viewCount;
+
+    private List<FileReqDto> list = new ArrayList<>();
 }
