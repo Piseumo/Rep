@@ -31,12 +31,6 @@ public class FreeBoard {
     private Long idx;
 
     private String title;
-
-//    private FreeBoard(Long idx,String title){
-//        this.idx = idx;
-//        this.title = title;
-//    }
-
     private String content;
 
     @CreatedBy
@@ -58,7 +52,23 @@ public class FreeBoard {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "freeBoard")
     private List<FileEntity> list = new ArrayList<>();
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JsonIgnore
     private User user;
+
+    public Long getIdx() {
+        return idx;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setIdx(Long idx) {
+        this.idx = idx;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

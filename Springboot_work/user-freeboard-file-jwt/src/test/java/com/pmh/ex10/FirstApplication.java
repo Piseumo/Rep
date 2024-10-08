@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 //IOC 컨테이너 생성
 //@SpringBootTest
-class Ex10ApplicationTests {
+class FirstApplication {
 
 	@Test
 	void contextLoads() {

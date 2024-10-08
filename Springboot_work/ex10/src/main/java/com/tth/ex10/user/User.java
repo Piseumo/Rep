@@ -38,7 +38,8 @@ public class User {
     private LocalDateTime wdate;
 
     @OneToMany(mappedBy = "user",
-                fetch = FetchType.EAGER)
+                fetch = FetchType.EAGER,
+                cascade = CascadeType.ALL)
     private List<FreeBoard> list = new ArrayList<>();
 
 }

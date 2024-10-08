@@ -18,25 +18,22 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("select")
-    public ResponseEntity<List<User>> select(){
-        return ResponseEntity.status(200).body(userRepository.findAll());
-    }
+    public ResponseEntity<List<User>> select() {
 
+        List<User> list = userRepository.findAll();
+
+        return ResponseEntity.status(200).body(list);
+
+    }
     @PostMapping("insert")
     public ResponseEntity<String> insert(@Valid @RequestBody UserReqDto userReqDto){
-
         userService.insert(userReqDto);
-
         return ResponseEntity.status(200).body("success insert");
     }
 
     @PutMapping("update")
     public ResponseEntity<String> update(@Valid @RequestBody UserReqDto userReqDto){
-        System.out.println("실행"+ userReqDto);
-        ModelMapper modelMapper = new ModelMapper();
-        User user = modelMapper.map(userReqDto, User.class);
-        System.out.println("user = "+ user);
-        userRepository.save(user);
+        userService.update(userReqDto);
         return ResponseEntity.status(200).body("success update");
     }
 

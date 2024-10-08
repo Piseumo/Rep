@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -34,6 +35,14 @@ public class FreeBoardController {
     private final FileRepository fileRepository;
     private final ModelMapper modelMapper;
 
+    @Value("${my.value}")
+    private String welcome;
+
+    @GetMapping("test")
+    public String test() {
+        return welcome;
+    }
+
     @GetMapping
     public ResponseEntity<FreeBoardResponsePageDto> findALl(@RequestParam(name = "pageNum",defaultValue = "0") int pageNum
             ,@RequestParam(name = "size",defaultValue = "5")int size){
@@ -44,23 +53,30 @@ public class FreeBoardController {
 
         Page<FreeBoard> page = freeBoardRepository.findAll(pageable);
 
-        FreeBoardResponsePageDto freeBoardResponsePageDto
-                = new ModelMapper()
-                .map(page, FreeBoardResponsePageDto.class);
+        FreeBoardResponsePageDto freeBoardResponsePageDto = new ModelMapper().map(page, FreeBoardResponsePageDto.class);
 
-        List<FreeBoardReponseDto> list = new ArrayList<>();
+        List<FreeBoardReponseDto> list = freeBoardResponsePageDto
+                .getContent()
+                .stream()
+                .map(freeBoard -> {
+                    FreeBoardReponseDto freeBoardResponseDto = modelMapper.map(freeBoard, FreeBoardReponseDto.class);
+                    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy/MM/dd hh:mm");
+                    freeBoardResponseDto.setRegDate(dateTimeFormatter.format(freeBoard.getRegDate()));
+                    freeBoardResponseDto.setModDate(dateTimeFormatter.format(freeBoard.getModDate()));
+                    return freeBoardResponseDto;
+                }).toList();
 
-        for(FreeBoard freeBoard : freeBoardResponsePageDto.getContent()){
-            FreeBoardReponseDto freeBoardReponseDto
-             = new ModelMapper().map(freeBoard,FreeBoardReponseDto.class);
-
-            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy/MM/dd hh:mm");
-
-            freeBoardReponseDto.setRegDate(dateTimeFormatter.format(freeBoard.getRegDate()));
-            freeBoardReponseDto.setModDate(dateTimeFormatter.format(freeBoard.getModDate()));
-
-            list.add(freeBoardReponseDto);
-        }
+//        for(FreeBoard freeBoard : freeBoardResponsePageDto.getContent()){
+//            FreeBoardReponseDto freeBoardReponseDto
+//             = new ModelMapper().map(freeBoard,FreeBoardReponseDto.class);
+//
+//            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yy/MM/dd hh:mm");
+//
+//            freeBoardReponseDto.setRegDate(dateTimeFormatter.format(freeBoard.getRegDate()));
+//            freeBoardReponseDto.setModDate(dateTimeFormatter.format(freeBoard.getModDate()));
+//
+//            list.add(freeBoardReponseDto);
+//        }
         freeBoardResponsePageDto.setList(list);
 
         return ResponseEntity.ok(freeBoardResponsePageDto);
@@ -96,7 +112,7 @@ public class FreeBoardController {
 
         if( file != null) {
             //파일저장
-            String myFilePath = Paths.get("images/file/").toAbsolutePath()+"\\"+file.getOriginalFilename();
+            String myFilePath = Paths.get("images/file/").toAbsolutePath()+ File.separator +file.getOriginalFilename();
             try {
             File destFile = new File(myFilePath);
             file.transferTo(destFile);

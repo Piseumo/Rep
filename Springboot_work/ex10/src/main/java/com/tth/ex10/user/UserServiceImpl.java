@@ -14,6 +14,7 @@ import java.util.Optional;
 public class UserServiceImpl implements UserService{
 
     private final UserRepository userRepository;
+    private final ModelMapper modelMapper;
 
     public void insert(UserReqDto userReqDto){
 
@@ -30,4 +31,18 @@ public class UserServiceImpl implements UserService{
 
     }
 
+    @Override
+    public void update(UserReqDto userReqDto) {
+        User user = modelMapper.map(userReqDto, User.class);
+        System.out.println("user = "+ user);
+
+        User dbUser = userRepository.findById(
+                user.getIdx()).orElseThrow(() -> { throw new BizException(ErrorCode.NOT_FOUND); } );
+
+        user.setWdate(dbUser.getWdate());
+//        user.setEmail(dbUser.getEmail());
+//        user.setPassword(dbUser.getPassword());
+
+        userRepository.save(user);
+    }
 }
