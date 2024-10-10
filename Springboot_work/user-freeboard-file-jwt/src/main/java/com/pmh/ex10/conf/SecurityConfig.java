@@ -1,10 +1,12 @@
 package com.pmh.ex10.conf;
 
 import com.pmh.ex10.JWT.JWTFilter;
+import com.pmh.ex10.JWT.JWTManager;
 import com.pmh.ex10.login.LoginFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -19,8 +21,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     private final AuthenticationConfiguration authenticationConfiguration;
-    public SecurityConfig(AuthenticationConfiguration authenticationConfiguration) {
+    private final JWTManager jwtManager;
+//    private final JWTManager jwtManager;
+
+    public SecurityConfig(AuthenticationConfiguration authenticationConfiguration, JWTManager jwtManager) {
         this.authenticationConfiguration = authenticationConfiguration;
+        this.jwtManager = jwtManager;
     }
 
     @Bean
@@ -51,7 +57,8 @@ public class SecurityConfig {
                 .anyRequest().authenticated() );
 
         http.addFilterBefore(new JWTFilter(),LoginFilter.class);
-        http.addFilterAt(new LoginFilter(authenticationManager(authenticationConfiguration)),
+        http.addFilterAt(new LoginFilter(
+                authenticationManager(authenticationConfiguration,jwtManager)),
                                 UsernamePasswordAuthenticationFilter.class);
 
         http.sessionManagement( session -> session.sessionCreationPolicy( SessionCreationPolicy.STATELESS ));

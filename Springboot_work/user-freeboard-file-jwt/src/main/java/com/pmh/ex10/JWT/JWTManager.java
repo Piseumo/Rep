@@ -4,6 +4,8 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import lombok.RequiredArgsConstructor;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
@@ -12,10 +14,13 @@ import java.util.Base64;
 import java.util.Date;
 
 @Component
+@RequiredArgsConstructor
 public class JWTManager {
 
-//JWT생성
-    public String createJWT(String secretkey){
+    private final Environment environment;
+
+    public String createJWT(){
+        String secretkey = environment.getProperty("spring.jwt.secret");
         String jwt = Jwts.builder()
                 .claim("name","piseumo")
                 .claim("role","ADMIN")
@@ -27,8 +32,10 @@ public class JWTManager {
                 .compact();
         return jwt;
     }
+
     //JWT 유효한지 검사, 우리가 설정한 비밀번호도 같이
-    public  String validJWT(String jwt,String secretkey){
+    public  String validJWT(String jwt){
+        String secretkey = environment.getProperty("spring.jwt.secret");
         try {
             SecretKey secretKey
                     = new SecretKeySpec(secretkey.getBytes(),

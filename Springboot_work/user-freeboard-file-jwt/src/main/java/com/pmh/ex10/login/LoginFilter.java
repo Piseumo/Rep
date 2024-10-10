@@ -1,34 +1,38 @@
 package com.pmh.ex10.login;
 
+import com.pmh.ex10.JWT.JWTManager;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import javax.swing.text.html.parser.Entity;
 import java.io.IOException;
 
 public class LoginFilter extends UsernamePasswordAuthenticationFilter {
 
     private final AuthenticationManager authenticationManager;
+    private final JWTManager jwtManager;
 
-    public LoginFilter(AuthenticationManager authenticationManager) {
+    public LoginFilter(AuthenticationManager authenticationManager, JWTManager jwtManager) {
         // get 방식 추가
         this.setFilterProcessesUrl("/login");
         this.authenticationManager = authenticationManager;
+        this.jwtManager = jwtManager;
+
     }
 
     // 로그인 시도 할때 호출 되는 메서드
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
 
-//        String username = this.obtainUsername(request);
-//        String password = this.obtainPassword(request);
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -46,6 +50,10 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication authResult) throws IOException, ServletException {
+        System.out.println(authResult);
+        System.out.println(authResult.getPrincipal().toString());
+        System.out.println(authResult.getCredentials().toString());
+        System.out.println(authResult.getAuthorities().toString());
 //        super.successfulAuthentication(request, response, chain, authResult);
         System.out.println("성공");
         response.getWriter().write("Login Success");
