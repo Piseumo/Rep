@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>상품 리스트 출력 예제</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <td>순번</td>
+        <td>상품명</td>
+        <td>상품설명</td>
+        <td>가격</td>
+        <td>상품등록일</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="itemDto, status: ${itemDtoList}">
+        <td th:switch="${status.even}">
+            <span th:case=true>짝수</span>
+            <span th:case=false>홀수</span>
+        </td>
+        <td th:text="${itemDto.itemNm}"></td>
+        <td th:text="${itemDto.itemDetail}"></td>
+        <td th:text="${itemDto.price}"></td>
+        <td th:text="${itemDto.regTime}"></td>
+    </tr>
+    </tbody>
+</table>
+<div id="map" style="width:500px;height:400px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0061f834b78c5f38c345878962fc250">
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+</script>
+
+
+</body>
+
+</html>
+
