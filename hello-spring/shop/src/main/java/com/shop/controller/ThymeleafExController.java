@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-//@RequestMapping(value = "/thymeleaf")
+@RequestMapping(value = "/thymeleaf")
 public class ThymeleafExController {
 
     @GetMapping(value = "/ex01")
@@ -77,21 +77,9 @@ public class ThymeleafExController {
         model.addAttribute("param2", param2);
         return  "thymeleafEx/thymeleafEx06";
     }
-    @GetMapping
-    public String thymeleafExample(Model model){
-        List<ItemDto> itemDtoList = new ArrayList<>();
-
-        for (int i = 1; i <=10 ; i++) {
-            ItemDto itemDto = new ItemDto();
-            itemDto.setItemDetail("상품 상세설명"+ i);
-            itemDto.setItemNm("테스트 상품" + i);
-            itemDto.setPrice(1000+i);
-            itemDto.setRegTime(LocalDateTime.now());
-
-            itemDtoList.add(itemDto);
-        }
-        model.addAttribute("itemDtoList",itemDtoList);
-        return "thymeleafEx/thymeleafEx04";
+    @GetMapping(value = "/ex07")
+    public String thymeleafExample07(){
+        return "thymeleafEx/thymeleafEx07";
     }
 
 }
