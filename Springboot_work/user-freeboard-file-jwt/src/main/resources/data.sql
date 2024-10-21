@@ -1,13 +1,13 @@
 INSERT INTO users (idx, username, age, email, password, wdate, role)
-VALUES (1, 'Red', 25, 'red@example.com', '$2a$10$.0BHw2vcay1s3Qre4D39zeCi4WMnnIyleplEZHf2G1lco.OjCROme', '2024-09-24 10:00:00','ROLE_ADMIN');
-INSERT INTO users (idx, username, age, email, password, wdate, role)
-VALUES (2, 'Blue', 30, 'blue@example.com', '$2a$10$.0BHw2vcay1s3Qre4D39zeCi4WMnnIyleplEZHf2G1lco.OjCROme', '2024-09-24 10:00:00','ROLE_ADMIN');
-INSERT INTO users (idx, username, age, email, password, wdate, role)
+VALUES (1, 'Red', 25, 'red@example.com', '$2a$10$vWiSw.AYMvhJUR3sLaF98eag1LevUAp1VeuokrXcUcQs3QLqMjUxi', now(),'ROLE_ADMIN');
+INSERT INTO users (idx, username, age, email, password, wdate , role)
+VALUES (2, 'Blue', 30, 'blue@example.com', '$2a$10$vWiSw.AYMvhJUR3sLaF98eag1LevUAp1VeuokrXcUcQs3QLqMjUxi', '2024-09-24 10:00:00','ROLE_ADMIN');
+INSERT INTO users (idx, username, age, email, password, wdate , role)
 VALUES (3, 'Green', 22, 'green@example.com', '$2a$10$.0BHw2vcay1s3Qre4D39zeCi4WMnnIyleplEZHf2G1lco.OjCROme', '2024-09-24 10:00:00','ROLE_ADMIN');
-INSERT INTO users (idx, username, age, email, password, wdate, role)
+INSERT INTO users (idx, username, age, email, password, wdate , role)
 VALUES (4, 'Yellow', 28, 'yellow@example.com', '$2a$10$.0BHw2vcay1s3Qre4D39zeCi4WMnnIyleplEZHf2G1lco.OjCROme', '2024-09-24 10:00:00','ROLE_ADMIN');
-INSERT INTO users (idx, username, age, email, password, wdate, role)
-VALUES (5, 'Purple', 35, 'purple@example.com', '$2a$10$.0BHw2vcay1s3Qre4D39zeCi4WMnnIyleplEZHf2G1lco.OjCROme', '2024-09-24 10:00:00','ROLE_ADMIN');
+INSERT INTO users (idx, username, age, email, password, wdate , role)
+VALUES (5, 'Purple', 35, 'purple@example.com', '$2a$10$tHev0M4o8AO.fJ8hQ5rxqOYFIzsQrx2Y1TctqE.Weh4me/7ZHoMnu', '2024-09-24 10:00:00','ROLE_ADMIN');
 
 INSERT INTO free_board (idx, title, content, user_idx, cre_author, mod_author, reg_date, mod_date, view_count)
 VALUES (1, 'pmhFirst Title', 'This is the first content.', 1, 'Author1', 'Modifier1', '2024-09-24 10:00:00', '2024-09-24 10:00:00', 0);
