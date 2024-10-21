@@ -11,6 +11,6 @@ const app = createApp(App);
 app.use(createPinia());
 app.use(router);
 
-window.Kakao.init('477ea0788a39a67ac40fa6b1bc49e7d8'); // 사용하려는 앱의 JavaScript 키 입력
+window.Kakao.init('3f44f77063513ce08dc7264e84d9bd46'); // 사용하려는 앱의 JavaScript 키 입력
 
 app.mount('#app');
