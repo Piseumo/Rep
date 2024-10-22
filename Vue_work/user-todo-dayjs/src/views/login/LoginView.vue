@@ -10,6 +10,7 @@
  </template>
  
  <script setup>
+
  const kakaoLogin = () => {
 	window.Kakao.Auth.authorize({
 	   redirectUri: 'http://localhost:5173/oauth',
@@ -19,6 +20,8 @@
  const kakaoLogout = () => {
 	window.Kakao.Auth.logout();
  };
+
+
  </script>
  
  <style lang="scss" scoped></style>

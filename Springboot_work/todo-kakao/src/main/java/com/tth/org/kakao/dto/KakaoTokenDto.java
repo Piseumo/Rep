@@ -1,4 +1,4 @@
-package com.tth.org.kakao;
+package com.tth.org.kakao.dto;
 
 import lombok.Data;
 
