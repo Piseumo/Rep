@@ -32,12 +32,14 @@ spring:
       max-request-size: 100MB
       file-size-threshold: 0
       enabled: true
-
+msa:
   jwt:
     secret: abcdefghijklmnopqrstuvwxyz01234567890
 
-my:
-  value: "welcome to my value"
+oauth:
+  kakao:
+    client_id: fa7eeb699aed4f3e61233d89424bb39b
+    client_secret: yniEv761Wmjr7Tx6dGt2nrx74cEMfOLY
 
 
 

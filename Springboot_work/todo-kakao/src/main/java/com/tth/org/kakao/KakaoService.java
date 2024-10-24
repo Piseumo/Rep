@@ -1,5 +1,7 @@
 package com.tth.org.kakao;
 
+import com.tth.org.error.UserException;
+import com.tth.org.filter.JWTUtils;
 import com.tth.org.kakao.dto.KakaoTokenDto;
 import com.tth.org.kakao.dto.KakaoUserInfoDto;
 import com.tth.org.kakao.jpa.KakaoEntity;
@@ -7,10 +9,12 @@ import com.tth.org.kakao.jpa.KakaoRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.LinkedMultiValueMap;
@@ -25,9 +29,11 @@ import java.util.UUID;
 public class KakaoService {
 
     private final KakaoRepository kakaoRepository;
+    private final Environment environment;
+    private final JWTUtils jwtUtils;
 
     @Transactional
-    public void getToken(String code) {
+    public String getToken(String code) {
         try {
             String url = "https://kauth.kakao.com/oauth/token";
             RestTemplate restTemplate = new RestTemplate();
@@ -37,10 +43,10 @@ public class KakaoService {
 
             MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
             body.add("grant_type", "authorization_code");
-            body.add("client_id", "3f44f77063513ce08dc7264e84d9bd46");
+            body.add("client_id", environment.getProperty("oauth.kakao.client_id"));
             body.add("redirect_uri", "http://localhost:5173/oauth");
             body.add("code", code);
-            body.add("client_secret", "76o92qsFUKED1W1lkVZFQX70TO4XdBRl");
+            body.add("client_secret", environment.getProperty("oauth.kakao.client_secret"));
 
             HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<>(body, headers);
 
@@ -50,40 +56,68 @@ public class KakaoService {
 
             //유저 정보 가져오기
             HttpHeaders headers2 = new HttpHeaders();
+
             headers2.add("Authorization", "Bearer " + kakaoTokenDto.getAccess_token());
             ResponseEntity<KakaoUserInfoDto> res = restTemplate.exchange("https://kapi.kakao.com/v2/user/me"
                     ,HttpMethod.GET
                     ,new HttpEntity<>(null,headers2)
                     , KakaoUserInfoDto.class
             );
-
             KakaoUserInfoDto kakaoUserInfoDto = res.getBody();
-            KakaoEntity kakaoEntity = new ModelMapper().map(kakaoTokenDto, KakaoEntity.class);
 
+            KakaoEntity dbkakaoEntity = kakaoRepository.findByEmail(kakaoUserInfoDto.getKakaoAccount().getEmail());
+
+            if (dbkakaoEntity == null){
+            KakaoEntity kakaoEntity = new ModelMapper().map(kakaoTokenDto, KakaoEntity.class);
             kakaoEntity.setEmail(kakaoUserInfoDto.getKakaoAccount().getEmail());
             kakaoEntity.setNickname(kakaoUserInfoDto.getKakaoAccount().getProfile().getNickname());
             kakaoEntity.setProfile_image(kakaoUserInfoDto.getKakaoAccount().getProfile().getProfileImageUrl());
             kakaoEntity.setThumbnail_image(kakaoUserInfoDto.getKakaoAccount().getProfile().getThumbnailImageUrl());
-
-            kakaoEntity.setUserId(UUID.randomUUID().toString());
-
             kakaoRepository.save(kakaoEntity);
+            }
+            else {
+            dbkakaoEntity.setNickname(kakaoUserInfoDto.getKakaoAccount().getProfile().getNickname());
+            dbkakaoEntity.setProfile_image(kakaoUserInfoDto.getKakaoAccount().getProfile().getProfileImageUrl());
+            dbkakaoEntity.setThumbnail_image(kakaoUserInfoDto.getKakaoAccount().getProfile().getThumbnailImageUrl());
+            dbkakaoEntity.setUserId(UUID.randomUUID().toString());
+
+            dbkakaoEntity.setAccess_token(kakaoTokenDto.getAccess_token());
+            dbkakaoEntity.setRefresh_token(kakaoTokenDto.getRefresh_token());
+            dbkakaoEntity.setExpires_in(kakaoTokenDto.getExpires_in());
+            dbkakaoEntity.setRefresh_token_expires_in(kakaoTokenDto.getRefresh_token_expires_in());
+            kakaoRepository.save(dbkakaoEntity);
+
+            }
+
+            String jwt = jwtUtils.createJwt(kakaoUserInfoDto.getKakaoAccount().getEmail());
+            return jwt;
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return "fail";
     }
     @Transactional
-    public void messageSend(String email ,String message) {
-       try {
-            String url = "https://kapi.kakao.com/v2/api/talk/memo/default/send";
+    public void messageSend(String jwt ,String message) {
+            String email = jwtUtils.getEmailFromJwt(jwt);
+
             RestTemplate  restTemplate = new RestTemplate();
+
+            String url = "https://kapi.kakao.com/v2/api/talk/memo/default/send";
 
             MultiValueMap headers2 = new LinkedMultiValueMap();
             headers2.add("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
 
+            //-------------//
+            KakaoEntity kakaoEntity = kakaoRepository.findByEmail(email);
+            if (kakaoEntity == null){
+                throw new UserException("Could not find user by email");
+            }
+
+            headers2.add("Authorization", "Bearer " + kakaoEntity.getAccess_token());
+
             MultiValueMap<String, String> body2 = new LinkedMultiValueMap<>();
-            body2.add("template_object", String.format(templateString(),email));
+            body2.add("template_object", String.format(messageString(),email,message));
 
             HttpEntity<MultiValueMap<String, String>> requestEntity2 = new HttpEntity<>(body2, headers2);
 
@@ -92,16 +126,13 @@ public class KakaoService {
 
             log.info("msg 카카오 메세지 전송 성공...." + result2.toString());
 
-        }catch(Exception e){
-            e.printStackTrace();
-        }
     }
 
-        public String templateString(){
+        public String messageString(){
             return "{\n" +
                     "        \"object_type\": \"feed\",\n" +
                     "        \"content\": {\n" +
-                    "            \"title\": \"뉴진스의 힘\",\n" +
+                    "            \"title\": \"%s님의 %s\",\n" +
                     "            \"description\": \"아메리카노, 빵, 케익\",\n" +
                     "            \"image_url\": \"https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg\",\n" +
                     "            \"image_width\": 640,\n" +

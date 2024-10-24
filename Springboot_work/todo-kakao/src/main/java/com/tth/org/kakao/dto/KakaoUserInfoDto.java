@@ -5,6 +5,9 @@ import lombok.*;
 
 @Setter
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class KakaoUserInfoDto {
 
         private long id;
