@@ -28,38 +28,25 @@ public class SecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
+        try {
+            String authorization = request.getHeader("Authorization");
+            log.info("Security Filter"+authorization);
+            String jwt = authorization.split("Bearer ")[1];
+            String email = jwtUtils.getEmailFromJwt(jwt);
+            Authentication authentication =
+                    new UsernamePasswordAuthenticationToken(
+                            User.builder()
+                                    .username(email)
+                                    .password("temp")
+                                    .roles("ADMIN")
+                                    .build()
+                            , null
+                    );
 
-        log.info("security filter...");
-        String authorization = request.getHeader("Authorization");
-        log.info("Security filter : " + authorization);
-
-        // securityContextHolder 안만듬
-        if(authorization == null || !authorization.startsWith("Bearer ")  ) {
-            filterChain.doFilter(request, response);
-            return;
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+        }catch (Exception e) {
+            e.printStackTrace();
         }
-
-        String jwt = authorization.split("Bearer ")[1];
-        String email = jwtUtils.getEmailFromJwt(jwt);
-
-        if (email == null) {
-            throw new UserException("user email not found");
-        }
-
-
-
-        Authentication authentication =
-                new UsernamePasswordAuthenticationToken(
-                        User.builder()
-                                .username(email)
-                                .password("temp")
-                                .roles("ADMIN")
-                                .build()
-                        ,null
-                );
-
-        SecurityContextHolder.getContext()
-                .setAuthentication(authentication);
         filterChain.doFilter(request, response);
     }
 }
