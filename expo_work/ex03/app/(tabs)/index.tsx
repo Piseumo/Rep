@@ -1,24 +1,28 @@
-import { Image, StyleSheet, Platform, View , Text} from 'react-native';
-import { Link, useRouter } from 'expo-router';
+import { Link, useRouter } from "expo-router";
+import { Image, StyleSheet, Platform, View, Text } from "react-native";
+
+/*
+  replace push
+*/
 
 export default function HomeScreen() {
-  const router = useRouter();
-  router.push('/home');
-  router.replace('/home');
+  // const router = useRouter();
+  // router.push('/home');
+  // router.replace('/home');
   return (
-      <View style={{marginTop:30}}>
-        <Text style={{fontSize:30}}>Index</Text>
-        <Link href="/(tabs)/lotto" replace>
-        <Text style={{fontSize:30}}>Lotto</Text>
-        </Link>
-      </View>
+    <View style={{ marginTop: 30 }}>
+      <Text style={{ fontSize: 30 }}> INDEX </Text>
+      <Link href="/(tabs)/lotto" replace>
+        <Text style={{ fontSize: 30 }}>Lotto</Text>
+      </Link>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
   stepContainer: {
@@ -30,6 +34,6 @@ const styles = StyleSheet.create({
     width: 290,
     bottom: 0,
     left: 0,
-    position: 'absolute',
+    position: "absolute",
   },
 });

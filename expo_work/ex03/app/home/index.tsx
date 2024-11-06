@@ -1,10 +1,9 @@
-import { View } from "react-native";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 export default function HOMEIndex(){
-    return(
-        <View>
-            <Text>Home/Index</Text>
-        </View>
-    )
+  return (
+    <View>
+      <Text>Home/Index</Text>
+    </View>
+  )
 }
