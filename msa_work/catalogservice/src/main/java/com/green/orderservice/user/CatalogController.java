@@ -1,8 +1,8 @@
-package com.green.userservice.user;
+package com.green.orderservice.user;
 
-import com.green.userservice.user.service.UserService;
-import com.green.userservice.user.vo.UserRequestDto;
-import com.green.userservice.user.vo.UserResponseDto;
+import com.green.orderservice.user.service.CatalogService;
+import com.green.orderservice.user.vo.CatalogRequestDto;
+import com.green.orderservice.user.vo.CatalogResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor
-public class UserController {
+public class CatalogController {
 
-    private final UserService userService;
+    private final CatalogService catalogService;
 
     @GetMapping("join")
-    public ResponseEntity<UserResponseDto> joinUser(@RequestBody UserRequestDto userRequestDto) {
-        userService.join(userRequestDto);
+    public ResponseEntity<CatalogResponseDto> joinUser(@RequestBody CatalogRequestDto catalogRequestDto) {
+        catalogService.join(catalogRequestDto);
         return ResponseEntity.ok(null);
     }
 

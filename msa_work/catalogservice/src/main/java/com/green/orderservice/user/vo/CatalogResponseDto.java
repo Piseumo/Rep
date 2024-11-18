@@ -1,6 +1,6 @@
-package com.green.userservice.user.vo;
+package com.green.orderservice.user.vo;
 
-public class UserResponseDto {
+public class CatalogResponseDto {
     private Long id;
 
     private String email;
