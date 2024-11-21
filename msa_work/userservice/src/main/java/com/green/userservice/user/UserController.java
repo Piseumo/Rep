@@ -5,22 +5,26 @@ import com.green.userservice.user.vo.UserRequestDto;
 import com.green.userservice.user.vo.UserResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("users")
 @RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
 
-    @GetMapping("join")
+    @PostMapping("join")
     public ResponseEntity<UserResponseDto> joinUser(@RequestBody UserRequestDto userRequestDto) {
-        userService.join(userRequestDto);
-        return ResponseEntity.ok(null);
+        UserResponseDto userResponseDto = userService.join(userRequestDto);
+        return ResponseEntity.ok(userResponseDto);
+    }
+
+    @GetMapping("list")
+    public ResponseEntity<List<UserResponseDto>> listUser(){
+        return ResponseEntity.ok(userService.list());
     }
 
     @GetMapping("login")

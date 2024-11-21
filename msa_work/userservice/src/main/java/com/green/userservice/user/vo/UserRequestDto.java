@@ -18,7 +18,7 @@ public class UserRequestDto {
     private String email;
     
     @Schema(hidden = true)
-    private Long userId;
+    private String userId;
 
     @Schema(example = "탁길동")
     private String name;
@@ -27,7 +27,5 @@ public class UserRequestDto {
     @Size(min = 8, message = "Password must be at least 8 characters long")
     @Schema(example = "password123456")
     private String password;
-
-    private String thumb;
 
 }
