@@ -1,10 +1,12 @@
 package com.green.userservice.user.service;
 
 import com.green.userservice.error.UserException;
+import com.green.userservice.feign.OrderClient;
 import com.green.userservice.jwt.JwtUtils;
 import com.green.userservice.user.jpa.UserEntity;
 import com.green.userservice.user.jpa.UserRepository;
 import com.green.userservice.user.vo.LoginResponse;
+import com.green.userservice.user.vo.OrderResponse;
 import com.green.userservice.user.vo.UserRequestDto;
 import com.green.userservice.user.vo.UserResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -21,6 +24,7 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final JwtUtils jwtUtils;
+    private final OrderClient orderClient;
 
 
     @Override
@@ -66,5 +70,18 @@ public class UserServiceImpl implements UserService {
         );
         return userResponses;
     }
+
+    @Override
+    public UserResponseDto getUser(String userId) {
+        UserEntity userEntity = userRepository.findByUserId(userId).orElseThrow(
+                () -> new UserException(String.format("User with id %s not found id", userId))
+        );
+        UserResponseDto userResponseDto = new ModelMapper().map(userEntity, UserResponseDto.class);
+        List<OrderResponse> orderResponses = orderClient.getOrders(userId);
+        userResponseDto.setOrderResponses(orderResponses);
+        return userResponseDto;
+    }
+
+
 }
 

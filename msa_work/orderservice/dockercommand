@@ -1,0 +1,8 @@
+#이미지삭제
+docker rmi piseumo/order-service:msa.k8.01
+
+#이미지생성
+docker build -t piseumo/order-service:msa.k8.02 .
+
+#이미지 도커허브 업로드
+docker push piseumo/order-service:msa.k8.02

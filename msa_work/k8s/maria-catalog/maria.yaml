@@ -1,0 +1,52 @@
+#apiVersion: v1
+#kind: Namespace
+#metadata:
+#  name: maria-name
+---
+apiVersion: apps/v1
+kind: Deployment # what to create?
+metadata:
+  name: mariadb-catalog-deployment
+#  namespace: maria-name
+spec: # specification for deployment resource
+  replicas: 1 # how many replicas of pods we want to create
+  selector:
+    matchLabels:
+      app: mariadb-catalog
+  template: # blueprint for pods
+    metadata:
+      labels:
+        app: mariadb-catalog # service will look for this label-catalog
+    spec: # specification for pods
+      containers:
+        - name: mariadb-catalog
+          image: mariadb
+          ports:
+            - containerPort: 3306 #default one
+          env:
+            - name: MARIADB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mariadb-secret
+                  key: password
+          volumeMounts:
+            - name: mariadb-initdb-config-catalog
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: mariadb-initdb-config-catalog
+          configMap:
+            name: mariadb-initdb-config-catalog
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mariadb-catalog
+#  namespace: maria-name
+spec:
+  type: NodePort
+  ports:
+    - port: 3306
+      targetPort: 3306
+      nodePort: 30308
+  selector:
+    app: mariadb-catalog

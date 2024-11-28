@@ -1,8 +1,9 @@
 #이미지삭제
-docker rmi piseumo/user-service:msa.k8.01
+kubectl delete deploy user-service-deployment
+docker rmi piseumo/user-service:msa.k8.02
 
 #이미지생성
-docker build -t piseumo/user-service:msa.k8.01 .
+docker build -t piseumo/user-service:msa.k8.02 .
 
 #이미지 도커허브 업로드
-docker push piseumo/user-service:msa.k8.01
+docker push piseumo/user-service:msa.k8.02

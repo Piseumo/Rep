@@ -14,7 +14,7 @@ spec: # specification for deployment resource
     spec: # specification for pods
       containers:
         - name: user-service
-          image: piseumo/user-service:msa.k8.01
+          image: piseumo/user-service:msa.k8.02
           ports:
             - containerPort: 40003
           env:
@@ -22,7 +22,7 @@ spec: # specification for deployment resource
               valueFrom:
                 configMapKeyRef:
                   name: msa-k8s-configmap
-                  key: spring-datasource-url
+                  key: spring-datasource-url-user
             - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
                 configMapKeyRef:
@@ -33,6 +33,10 @@ spec: # specification for deployment resource
                 configMapKeyRef:
                   name: msa-k8s-configmap
                   key: user-service-port
+            - name: FIRST_SERVICE_URL
+              value: first-service:40001
+            - name: ORDER_SERVICE_URL
+              value: order-service:40004
 
 ---
 apiVersion: v1

@@ -1,5 +1,6 @@
 package com.green.userservice.user;
 
+import com.green.userservice.feign.FirstClient;
 import com.green.userservice.user.service.UserService;
 import com.green.userservice.user.vo.UserRequestDto;
 import com.green.userservice.user.vo.UserResponseDto;
@@ -10,11 +11,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("user-service")
 @RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
+    private final FirstClient firstClient;
+
+    @GetMapping("test")
+    public String test(){
+        System.out.println("통신 시작");
+        System.out.println(firstClient.getTest());
+        System.out.println("통신끝");
+        return "UserService";
+    }
 
     @PostMapping("join")
     public ResponseEntity<UserResponseDto> joinUser(@RequestBody UserRequestDto userRequestDto) {
@@ -31,6 +41,12 @@ public class UserController {
     public ResponseEntity<String> getUser() {
 
         return ResponseEntity.ok(null);
+    }
+
+    @GetMapping("getuser/{userId}")
+    public ResponseEntity<UserResponseDto> getUser(@PathVariable(value = "userId")String userId) {
+        UserResponseDto userResponseDto = userService.getUser(userId);
+        return ResponseEntity.ok(userResponseDto);
     }
 
     @GetMapping("kakologin")

@@ -1,3 +1,5 @@
 firstservice=40001
 secondservice=40002
 userservices=40003
+orderservices=40004
+catalogservices=40005

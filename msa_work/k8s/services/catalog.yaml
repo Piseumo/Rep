@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment # what to create?
+metadata:
+  name: order-service-deployment
+spec: # specification for deployment resource
+  replicas: 1 # how many replicas of pods we want to create
+  selector:
+    matchLabels:
+      app: order-service
+  template: # blueprint for pods
+    metadata:
+      labels:
+        app: order-service # service will look for this label
+    spec: # specification for pods
+      containers:
+        - name: order-service
+          image: piseumo/order-service:msa.k8.02
+          ports:
+            - containerPort: 40003
+          env:
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: msa-k8s-configmap
+                  key: spring-datasource-url-user
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: msa-k8s-configmap
+                  key: spring-datasource-order
+            - name: SERVER_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: msa-k8s-configmap
+                  key: order-service-port
+            - name: FIRST_SERVICE_URL
+              value: first-service:40001
+            - name: ORDER_SERVICE_URL
+              value: order-service:40004
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 40004
+      targetPort: 40004
+  selector:
+    app: order-service

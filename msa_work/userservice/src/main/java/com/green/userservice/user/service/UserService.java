@@ -12,4 +12,5 @@ public interface UserService {
     UserResponseDto join(UserRequestDto userRequestDto);
     LoginResponse login(String email, String password);
     List<UserResponseDto> list();
+    UserResponseDto getUser(String userId);
 }

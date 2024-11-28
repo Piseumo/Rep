@@ -2,6 +2,8 @@ package com.green.userservice.user.vo;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class UserResponseDto {
     private Long id;
@@ -13,5 +15,7 @@ public class UserResponseDto {
     private String name;
 
     private String password;
+
+    private List<OrderResponse> orderResponses;
 
 }
