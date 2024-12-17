@@ -1,4 +1,4 @@
-package com.green.catalogservice;
+package com.green.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

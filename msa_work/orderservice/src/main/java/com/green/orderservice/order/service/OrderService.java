@@ -1,7 +1,7 @@
-package com.green.catalogservice.catalog.service;
+package com.green.orderservice.order.service;
 
-import com.green.catalogservice.catalog.vo.OrderRequest;
-import com.green.catalogservice.catalog.vo.OrderResponse;
+import com.green.orderservice.order.vo.OrderRequest;
+import com.green.orderservice.order.vo.OrderResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

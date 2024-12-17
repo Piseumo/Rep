@@ -1,4 +1,4 @@
-package com.green.catalogservice.error;
+package com.green.orderservice.error;
 
 public class OrderException extends RuntimeException{
 

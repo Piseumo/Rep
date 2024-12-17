@@ -1,4 +1,4 @@
-package com.green.catalogservice.catalog.jpa;
+package com.green.orderservice.order.jpa;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,8 +1,8 @@
-package com.green.catalogservice.catalog;
+package com.green.orderservice.order;
 
-import com.green.catalogservice.catalog.service.OrderService;
-import com.green.catalogservice.catalog.vo.OrderRequest;
-import com.green.catalogservice.catalog.vo.OrderResponse;
+import com.green.orderservice.order.service.OrderService;
+import com.green.orderservice.order.vo.OrderRequest;
+import com.green.orderservice.order.vo.OrderResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

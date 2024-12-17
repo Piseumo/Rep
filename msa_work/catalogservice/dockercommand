@@ -4,9 +4,13 @@ docker rmi piseumo/catalog-service:msa.k8.01
 docker rmi piseumo/catalog-service:msa.k8.02
 docker rmi piseumo/catalog-service:msa.k8.03
 docker rmi piseumo/catalog-service:msa.k8.04
+docker rmi piseumo/catalog-service:msa.k8.05
+docker rmi piseumo/catalog-service:msa.k8.06
+docker rmi piseumo/catalog-service:msa.k8.07
+docker rmi piseumo/catalog-service:msa.k8.08
 
 #이미지 생성
-docker build -t piseumo/catalog-service:msa.k8.05 .
+docker build -t piseumo/catalog-service:msa.k8.09 .
 
 #이미지 dockerhub 업로드 명령어
-docker push piseumo/catalog-service:msa.k8.05
+docker push piseumo/catalog-service:msa.k8.09

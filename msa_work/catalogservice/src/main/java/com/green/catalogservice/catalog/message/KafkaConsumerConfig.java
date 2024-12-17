@@ -23,26 +23,27 @@ public class KafkaConsumerConfig {
     private final Environment environment;
 
     @Bean
-    public ConsumerFactory<String , String> consumerFactory(){
+    public ConsumerFactory<String, String> consumerFactory(){
         Map<String, Object> properties = new HashMap<>();
 
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, environment.getProperty("spring.kafka.bootstrap-servers"));
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"catalog-consumer");
-
-        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "catalog-consumer");
+        // earliest 가장 처음부터
+        // latest 가장 최신부터
+        // none 위치가 없으면 에러
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 
         return new DefaultKafkaConsumerFactory<>(properties);
-
     }
+
 
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String,String> kafakaListenerContainerFactory(){
-        ConcurrentKafkaListenerContainerFactory<String,String> factory = new ConcurrentKafkaListenerContainerFactory<>();
+    public ConcurrentKafkaListenerContainerFactory<String, String> kafkaListenerContainerFactory(){
+        ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         return factory;
-
-
     }
 }
+
