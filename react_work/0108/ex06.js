@@ -18,3 +18,5 @@ aaa = { a:10, b:20, id:`aaa@naver.com`, pw:"abc"}
 console.log(aaa);
 delete aaa.a
 console.log(aaa);
+
+
