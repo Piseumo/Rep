@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MainRep\\C#_work\\exercise\\ex01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0C896B-5227-4F28-8FF9-EF5FD67FF2E7}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\mainrep\\c#_work\\exercise\\ex01\\windowsformsapp1\\firstcustomcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF0C896B-5227-4F28-8FF9-EF5FD67FF2E7}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\firstcustomcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0C896B-5227-4F28-8FF9-EF5FD67FF2E7}|WindowsFormsApp1\\WindowsFormsApp1.csproj|d:\\mainrep\\c#_work\\exercise\\ex01\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF0C896B-5227-4F28-8FF9-EF5FD67FF2E7}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FirstCustomControl.cs [Design]",
+              "DocumentMoniker": "D:\\MainRep\\C#_work\\exercise\\ex01\\WindowsFormsApp1\\FirstCustomControl.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\FirstCustomControl.cs",
+              "ToolTip": "D:\\MainRep\\C#_work\\exercise\\ex01\\WindowsFormsApp1\\FirstCustomControl.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\FirstCustomControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:59:54.948Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\MainRep\\C#_work\\exercise\\ex01\\WindowsFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
+              "ToolTip": "D:\\MainRep\\C#_work\\exercise\\ex01\\WindowsFormsApp1\\Form1.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T07:51:16.044Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

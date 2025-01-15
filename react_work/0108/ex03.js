@@ -4,7 +4,7 @@ const aa = {
     c:"c변수입니다"
 }
 
-const {a,b,c,d} = aa;
+const {a,b,c} = aa;
 
 console.log(`a = ${a}`);
 console.log(`b = ${b}`);

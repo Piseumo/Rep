@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "set AA=20 && node ex01.js",
     "dev": "set AA=10 && node ex01.js",
     "aaa": "echo aaa && ls -al",
     "test": "echo \"Error: no test specified\" && exit 1"

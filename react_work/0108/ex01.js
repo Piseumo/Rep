@@ -42,7 +42,9 @@ printName(f5);
 printName(t1);
 
 function aa (a){
+    if(a){
     console.log(a);
+}
 }
 
 aa({ a: 10 , b : 20});

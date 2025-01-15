@@ -10,7 +10,7 @@ const getData = async () =>{
     });
 };
 
-printData = async ()=>{
+const printData = async ()=>{
 await getData();
 console.log(res);
 }

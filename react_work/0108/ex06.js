@@ -13,7 +13,7 @@ console.log(typeof {} );
 console.log(typeof []);
 console.log(typeof (() =>{}));
 
-aaa = { a:10, b:20, id:`aaa@naver.com`, pw:"abc"}
+const aaa = { a:10, b:20, id:`aaa@naver.com`, pw:"abc"}
 
 console.log(aaa);
 delete aaa.a

@@ -10,7 +10,6 @@ const person = {
 //     console.log(`이름은 ${name}`);
 //     console.log(`성별은 ${gender}`);
 // }
-fuc(person)
 
 const fuc = ({age, name, gender}) => {
     console.log(`나이는 ${age}`);
@@ -18,3 +17,4 @@ const fuc = ({age, name, gender}) => {
     console.log(`성별은 ${gender}`);
 }
 
+fuc(person)
